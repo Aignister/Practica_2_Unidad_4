@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Biblioteca" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DARKWURM;Initial Catalog=Biblioteca;Integrated Security=True" SettingsObjectName="Practica_2_Unidad_4.Properties.Settings" SettingsPropertyName="BibliotecaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Libros" Member="Libros">
+    <Type Name="Libro">
+      <Column Name="Id_Libro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Titulo" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Autor" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Genero" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Publicacion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Portada" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>
